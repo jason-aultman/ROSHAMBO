@@ -33,5 +33,22 @@ namespace ROSHAMBOTest
             //Assert
             Assert.True(result);
         }
+
+        [Fact]
+        public void PaperBeatsRockTest()
+        {
+            //Arrange
+            var stringOne = "Paper";
+            var stringTwo = "Rock";
+            Roshambo roshambo = new Roshambo();
+
+            //Act
+            var result = roshambo.Play(stringOne, stringTwo);
+
+            //Assert
+            Assert.True(result);
+        }
     }
 }
+       
+
