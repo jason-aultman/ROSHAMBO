@@ -19,5 +19,19 @@ namespace ROSHAMBOTest
             //Assert
             Assert.True(result);
         }
+        [Fact]
+        public void ScissorsBeatsPaperTest()
+        {
+            //Arrange
+            var stringOne = "Scissors";
+            var stringTwo = "Paper";
+            Roshambo roshambo = new Roshambo();
+
+            //Act
+            var result = roshambo.Play(stringOne, stringTwo);
+
+            //Assert
+            Assert.True(result);
+        }
     }
 }
